@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game of Thrones API</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$(".houses").click(function(){
+					console.log("clicked!");
+					if($(this).attr('num') ==='378')
+						{
+							console.log("not working!");
+							$("#houseInfo").empty();
+							$("#houseInfo").append('<h2>The API does not want to give me info about house Targaryen! sorry!</h2>');
+						}
+					$.get("https://anapioficeandfire.com/api/houses/"+$(this).attr('num'), function(res){
+						console.log(res);
+						$("#houseInfo").empty();
+
+						$("#houseInfo").append('<h2>Name: '+res["name"]+'</h2><h2>Words: '+res["words"]+'</h2><h2>Titles: '+res["titles"]+'</h2>');
+
+					}, "json");
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="stark houses" num="362"></div>
+			<div class="lannister houses" num="229"></div>
+			<div class="baratheon houses" num="15"></div>
+			<div class="targaryen houses" num="378"></div>
+			<div id="houseInfo"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container
+{
+	border: solid;
+	height: 900px;
+	width: 90%;
+	padding-left: 10px;
+	background: linear-gradient(to bottom, lightgrey, black);
+	/*background-color: black;*/
+
+}
+
+.stark
+{
+	border: solid;
+	width: 23.2%;
+	height: 250px;
+	display: inline-block;
+	margin: 8px;
+	background-image: url("stark.jpg");
+	background-size: 100% 100%;
+}
+
+.lannister
+{
+	border: solid;
+	width: 23.2%;
+	height: 250px;
+	display: inline-block;
+	margin: 8px;
+	background-image: url("lannister.jpg");
+	background-size: 100% 100%;
+}
+
+.baratheon
+{
+	border: solid;
+	width: 23.2%;
+	height: 250px;
+	display: inline-block;
+	margin: 8px;
+	background-image: url("baratheon.png");
+	background-size: 100% 100%;
+}
+
+.targaryen
+{
+	border: solid;
+	width: 23.2%;
+	height: 250px;
+	display: inline-block;
+	margin: 8px;
+	background-image: url("targaryen.jpg");
+	background-size: 100% 100%;
+}
+
+#houseInfo
+{
+	border: solid;
+	height: 340px;
+	width: 38%;
+	margin-left: 500px;
+	margin-top: 130px;
+
+}
+
+#houseInfo h2
+{
+	margin: 10px;
+	color: white;
+}
